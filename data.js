@@ -1,4 +1,3 @@
-// WRITE YOUR CODE BELOW THIS LINE
 let favMovies = [
     {
         title: "Mary Poppins",
@@ -9,9 +8,6 @@ let favMovies = [
 		writer: "P.L. Travers",
 		stars: "Julie Andrews, Dick Van Dyke",
 		genre: "musical"
-
-
-
     },
     {
         title: "Scream",
@@ -72,20 +68,3 @@ for (let movies of favMovies) {
 	starsByMovies += "\n_\n\n";
 };
 console.log(starsByMovies);
-
-
-// DO NOT MODIFY THE CODE BELOW THIS LINE
-let toExport;
-
-try {
-	toExport = [
-		{name: "favMovies", content: favMovies, type: "array"},
-		{name: "averageRate", content: averageRate, type: "number"},
-		{name: "newestMovie", content: newestMovie, type: "object"},
-		{name: "starsByMovies", content: starsByMovies, type: "string"}
-	]
-} catch (error) {
-	toExport = {error: error.message}
-}
-
-export {toExport};
